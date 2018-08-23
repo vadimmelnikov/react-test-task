@@ -17,12 +17,12 @@ module.exports = {
     },
 
     output: {
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'docs'),
         filename: '[name].bundle-[chunkhash].js'
     },
 
     devServer: {
-        contentBase: path.join(__dirname, '/public'),
+        contentBase: path.join(__dirname, '/docs'),
         compress: true,
         historyApiFallback: true,
         port: 9000
@@ -57,7 +57,7 @@ module.exports = {
     },
 
     plugins: [
-        new CleanWebpackPlugin('public', {}),
+        new CleanWebpackPlugin('docs', {}),
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash:8].css',
         }),
