@@ -1,0 +1,30 @@
+.btn{
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  font-size: 14px;
+  &--header{
+	background-color: transparent;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgba(255, 255, 255, 0.7);
+
+	border-radius: 4px;
+	border: solid 1px #69728b;
+	height: 26px;
+	padding: 0 15px;
+  }
+  &--submit{
+	font-size: 16px;
+	font-family: 'formularbold';
+	line-height: 22px;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 #0053ff;
+	background-image: linear-gradient(to bottom, #1b91ff, #2068ff);
+	border: solid 0.5px #568cff;
+	height: 38px;
+  }
+}

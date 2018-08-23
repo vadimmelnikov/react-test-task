@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.footer{
+
+  padding: 5px 0;
+  box-sizing: border-box;
+  background-color: #13141c;
+  z-index: 4;
+  height: 30px;
+  @include breakpoint(tablet) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+}
+.flex{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item{
+	position: relative;
+  }
+}
+.link{
+  color: $txt;
+  font-size: 12px;
+  padding: 2px 0;
+  text-decoration: none;
+  &:hover{
+	color: #fff;
+  }
+}

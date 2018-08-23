@@ -1,0 +1,75 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.sidebar {
+  background-color: #181925;
+  box-sizing: border-box;
+  border-bottom: 30px solid #181925;
+  border-top: 44px solid #181925;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include breakpoint(tablet) {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 288px;
+	z-index: 2;
+  }
+  @include breakpoint(desktop) {
+	width: 388px;
+  }
+  &__wrapper {
+	padding: 0 $count;
+	padding-top: 15px;
+	padding-bottom: 22px;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  &__footer {
+	margin-top: auto;
+	//position: absolute;
+	//bottom: 0;
+	//left: 0;
+	width: 100%;
+
+	padding: 22px $count;
+	box-sizing: border-box;
+	background-color: #181925;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-family: 'formularbold';
+  color: #ffffff;
+  margin: 0;
+}
+
+.col {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  &__item {
+	position: relative;
+	margin-right: 10px;
+	&:last-child {
+	  margin-right: 0;
+	}
+  }
+}
+
+.form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

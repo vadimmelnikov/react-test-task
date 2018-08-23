@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.textcont{
+  font-size: 20px;
+  line-height: 28px;
+  color: #69728b;
+  margin: 0;
+}
+.top{
+  margin-bottom: 43px;
+  @include breakpoint(tablet) {
+    padding: 0 64px;
+  }
+}
+.column{
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(tablet) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    margin-left: -50px;
+  }
+  &__item{
+    position: relative;
+    margin-bottom: 90px;
+    box-sizing: border-box;
+    @include breakpoint(tablet) {
+      padding-left: 50px;
+      max-width: 50%;
+      width: 100%;
+    }
+  }
+}
+.pic{
+  width: 54px;
+  min-width: 54px;
+
+}
+.title{
+  font-size: 20px;
+  font-family: 'formularbold';
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.flex{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item{
+    position: relative;
+    margin-right: 10px;
+  }
+}
+.txt{
+  font-size: 16px;
+  line-height: 24px;
+  color: #69728b;
+  margin-top: 0;
+  margin-bottom: 0;
+}

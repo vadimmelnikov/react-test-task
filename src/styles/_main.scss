@@ -1,0 +1,45 @@
+.grid-col{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item{
+	min-height: 100vh;
+	width: 100%;
+	background-color: #0c0c15;
+	&--sidebar{
+	  background-color: #181925;
+	  width: 388px;
+	  min-width: 388px;
+	}
+  }
+}
+.simple-txt{
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.simple-link{
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.main{
+  box-sizing: border-box;
+  @include breakpoint(tablet) {
+	padding-left: 288px;
+  }
+  @include breakpoint(desktop) {
+	padding-left: 388px;
+  }
+}
+.large-title{
+  font-family: 'formularbold';
+  margin-top: 0;
+  font-size: 34px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
