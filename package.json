@@ -8,7 +8,8 @@
     "start": "webpack-dev-server  --config ./webpack.config.js --mode development",
     "dev": "webpack --mode development",
     "build": "NODE_ENV=production webpack --mode production",
-    "scss": "node-sass --use autoprefixer -watch --include-path scss src/styles/app.scss src/styles/app.css "
+    "scss": "node-sass --use autoprefixer -watch --include-path scss src/styles/app.scss src/styles/app.css ",
+    "gh": "gh-pages -d build"
   },
   "dependencies": {
     "babel-eslint": "^8.2.6",
@@ -17,6 +18,7 @@
     "bugsnag-react": "^1.1.1",
     "eslint": "^5.2.0",
     "eslint-plugin-react": "^7.10.0",
+    "gh-pages": "^1.2.0",
     "lodash": "^4.17.5",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
