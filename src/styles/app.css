@@ -411,38 +411,44 @@ th {
 
 /* line 14, src/styles/app.scss */
 html {
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
 
-/* line 18, src/styles/app.scss */
+/* line 20, src/styles/app.scss */
 img {
   max-width: 100%;
   height: auto;
   display: block; }
 
-/* line 24, src/styles/app.scss */
+/* line 26, src/styles/app.scss */
 body {
   height: 100%;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
   color: #fff;
   font-size: 16px;
   font-family: 'formularregular';
   background-color: #000000; }
 
-/* line 32, src/styles/app.scss */
+/* line 38, src/styles/app.scss */
 .wrapper {
   position: relative;
   min-height: 100%;
   padding-top: 10px; }
 
-/* line 37, src/styles/app.scss */
+/* line 43, src/styles/app.scss */
 .container {
   padding: 0 15px; }
 
-/* line 40, src/styles/app.scss */
+/* line 46, src/styles/app.scss */
 .large-container {
   padding: 0 15px;
   padding-top: 50px; }
   @media (min-width: 50em) {
-    /* line 40, src/styles/app.scss */
+    /* line 46, src/styles/app.scss */
     .large-container {
       padding: 0 60px;
       padding-top: 100px;
@@ -644,11 +650,11 @@ body {
   .fogot-link:hover {
     color: #fff; }
 
-/* line 73, src/styles/app.scss */
+/* line 79, src/styles/app.scss */
 .title {
   color: rosybrown; }
 
-/* line 76, src/styles/app.scss */
+/* line 82, src/styles/app.scss */
 .tools {
   color: tomato;
   font-size: 16px; }
